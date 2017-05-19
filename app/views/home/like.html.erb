@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>ORM LIKE <%= link_to "HOME", root_path %> <%= link_to "LIST", list_path  %></h3>
+  <table>
+    <thead>
+      <th>ID</th>
+      <th>USER_ID</th>
+      <th>POST_ID</th>
+      <th>STATUS</th>
+    </thead>
+    <tbody>
+      <% @likes.each do |l| %>
+        <tr>
+          <td><%= l.id %></td>
+          <td><%= l.user_id %></td>
+          <td><%= l.post_id %></td>
+          <td><%= l.status %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

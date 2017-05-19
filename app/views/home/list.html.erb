@@ -1,0 +1,25 @@
+<div class="container">
+  <h3>ORM LIST <%= link_to "HOME", root_path %> <%= link_to "LIKE", like_path  %></h3>
+  <table>
+    <thead>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>AGE</th>
+      <th>GENDER</th>
+      <th>FOOD</th>
+      <th>CITY</th>
+    </thead>
+    <tbody>
+      <% @users.each do |u| %>
+        <tr>
+          <td><%= u.id %></td>
+          <td><%= u.name %></td>
+          <td><%= u.age %></td>
+          <td><%= u.gender %></td>
+          <td><%= u.food %></td>
+          <td><%= u.city %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
