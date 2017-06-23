@@ -1,5 +1,12 @@
 <div class="container">
-  <%= render partial: "search_bar" %>
-  <%= render partial: "list", locals: {users: @users}%>
-  <%= render partial: "footer" %>
+  <div id="serah-bar">
+    <%= render partial: "search_bar" %>
+  </div>
+  <div id="list">
+    <%= render partial: "list", locals: {users: @users}%>
+  </div>
+  <div id="footer">
+    <%= render partial: "footer" %>
+  </div>
 </div>
+
